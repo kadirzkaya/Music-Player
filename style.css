@@ -1,0 +1,85 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    max-height: 600px;
+}
+
+#progress .times,.volume-containers, .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volume-containers i{
+    margin-right: 10px;
+}
+
+.form-range::-webkit-slider-thumb {
+    background: #034f84; 
+}
+
+.form-range::-moz-range-thumb {
+    background: #034f84;
+}
+   
+.form-range::-ms-thumb {
+    background: #034f84;
+}
+   
+@media (prefers-reduced-motion: reduce) {
+    .form-range::-webkit-slider-thumb {
+      -webkit-transition: none;
+      transition: none;
+    }
+}
+   
+.form-range::-webkit-slider-thumb:active {
+    background-color: #92a8d1;
+}
+   
+.form-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.5rem;
+    color: transparent;
+    cursor: pointer;
+    background-color: #92a8d1;
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+li.playing{
+    background-color: blue;
+    color: white;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.badge{
+    height: fit-content;
+}
+
+#music-image{
+    max-width: 400px;
+    max-height: 188px;
+    object-fit: cover;
+}
+
+.space{
+    height: 1rem;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
